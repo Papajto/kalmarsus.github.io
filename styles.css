@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7931a; /* Bitcoin color */
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+nav {
+    background-color: #1b1b1b;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #f7931a;
+}
+
+section {
+    padding: 80px 15%;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.donation {
+    background-color: #f7931a;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.donation p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.donation input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+.donation button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.donation button:hover {
+   
