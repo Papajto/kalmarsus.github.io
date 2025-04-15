@@ -97,20 +97,27 @@
   </footer>
 
   <script>
-    // Fetching live BTC price from a public API
-    fetch('https://api.coindesk.com/v1/bpi/currentprice/BTC.json')
+    // Fetching live BTC price from CoinGecko API
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
       .then(response => response.json())
       .then(data => {
-        const price = data.bpi.USD.rate;
+        const price = data.bitcoin.usd;
         document.getElementById('btc-price').innerHTML = `Current Bitcoin Price: $${price}`;
       })
       .catch(error => {
         document.getElementById('btc-price').innerHTML = "Couldn't fetch BTC price.";
       });
 
-    // Hidden message Easter egg
-    document.querySelector('.btc-address').addEventListener('click', function() {
-      document.getElementById('hidden-message').style.display = 'block';
+    // Click counter for showing hidden message after 20 clicks
+    let clickCounter = 0;
+    const btcAddressElement = document.querySelector('.btc-address');
+    const hiddenMessageElement = document.getElementById('hidden-message');
+
+    btcAddressElement.addEventListener('click', function() {
+      clickCounter++;
+      if (clickCounter === 20) {
+        hiddenMessageElement.style.display = 'block';
+      }
     });
   </script>
 
